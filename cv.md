@@ -153,7 +153,5 @@ I'm a Beginner Front End Developer with ML Analytic experience.
 *   **©2022 by Aleksandr Mikhaylov**
 
 *   [![RSSchool Logo](./img/logo/rsschool/rss-mark-light.svg)](https://rs.school/js-stage0/) 
-
 </div>
-
 </footer>
