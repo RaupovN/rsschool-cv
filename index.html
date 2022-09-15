@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>First CV</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header class = "header">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#profile">profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#summary">summary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#code">code</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#courses">courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#languages">languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class = "main">
+            <div class="container">
+                <section class="section" id="profile">
+                    <h1 class="block-title" id="name">Aleksandr Mikhaylov</h1>
+                    <img class="avatar" alt="Avatar" src="./img/avatar.jpg" />
+                    <p class="job-title">Beginner/Future FE Developer</p>
+                </section>
+
+                <section class="section" id="contact">
+                    <h2 class="block-title">contact</h2>
+                    <ul class="main-list">
+                        <li class="main-item">e-mail: <a class='contact-link' href="mailto:alex.mcgee.mail@gmail.com">alex.mcgee.mail@gmail.com</a></li>
+                        <li class="main-item">telegram: <a class='contact-link' href="https://t.me/ranpu">@ranpu</a></li>
+                    </ul>
+                </section>
+
+                <section class="section" id="summary">
+                    <h2 class="block-title">summary</h2>
+                    <p>I'm a Beginner Front End Developer with ML Analytic experience.</p>
+                </section>
+
+                <section class="section" id="skills">
+                    <h2 class="block-title">skills</h2>
+                    <ul class="main-list">
+                        <li class="main-item">HTML5, CSS3 - Beginner</li>
+                        <li class="main-item">JavaScript - Beginner</li>
+                        <li class="main-item">Python - Junior</li>
+                        <li class="main-item">Adobe Photoshop, CorelDraw</li>
+                        <li class="main-item">GitHub, Git</li>
+                        <li class="main-item">VS Code</li>
+                    </ul>
+                </section>
+
+                <section class="section" id="code">
+                    <h2 class="block-title">code</h2>
+                    <p><a class="code-task-link" href="https://www.codewars.com/kata/526989a41034285187000de4/javascript">Count IP Addresses KATA from CODEWARS (JavaScript solution):</a></p>
+                    <pre>
+                        <code>
+function ipsBetween(start, end){
+    start = start.split('.')
+    end = end.split('.')
+    let diff = []
+        
+    for (let i = 0; i &lt; 4; i++) {
+        start[i] = Number(start[i])
+        end[i] = Number(end[i])
+        diff.push(start[i] - end[i])
+    }
+    
+    return Math.abs((256**3 * diff[0]) + 
+                    (256**2 * diff[1]) + 
+                    (256 * diff[2]) + diff[3])
+}
+                        </code>
+                    </pre>
+
+                    <p><a class="code-task-link" href="https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/python">Range Extraction KATA from CODEWARS (Python solution):</a></p>
+                    <pre>
+                        <code>
+def solution(args):
+    args += [None]
+    final, middle = [], [args[0]]
+
+    for x in range(1, len(args)):
+        if args[x-1] + 1 != args[x]:
+            if len(middle) > 2:
+                final += [str(middle[0]) + '-' + str(middle[-1])]
+            else:
+                final += [str(x) for x in middle]
+            middle = [args[x]]
+        else:
+            middle += [args[x]]
+                            
+    return ','.join(final)
+                        </code>
+                    </pre>
+                </section>
+
+                <section class="section" id="courses">
+                    <h2 class="block-title">courses</h2>
+                    <ul class="main-list">
+                        <li class="main-item">RSSchool Stage0 (In Progress)</li>
+                    </ul>
+                </section>
+
+                <section class="section" id="projects">
+                    <h2 class="block-title">projects</h2>
+                    <ul class="main-list">
+                        <li class="main-item"><a href="https://github.com/Ranpu/rsschool-cv/tree/gh-pages">First CV</a></li>
+                    </ul>
+                </section>
+
+                <section class="section" id="education">
+                    <h2 class="block-title">education</h2>
+                    <ul class="main-list">
+                        <li class="main-item">Art College №59, Moscow (2013)</li>
+                    </ul>
+                </section>
+
+                <section class="section" id="languages">
+                    <h2 class="block-title">languages</h2>
+                    <ul class="main-list">
+                        <li class="main-item">Russian - Native</li>
+                        <li class="main-item">English - Intermediate/Upper-intermediate</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer class = "footer">
+            <div class="container">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a class='footer-logo-link' href='https://github.com/Ranpu/'>
+                            <img class="footer-logo" alt="GitHub Logo" src="./img/logo/github/GitHub-Mark-Light-32px.png"/>
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <p id='year'><strong>©2022 by Aleksandr Mikhaylov</strong></p>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class='footer-logo-link' href='https://rs.school/js-stage0/'>
+                            <img class="footer-logo" alt="RSSchool Logo" src="./img/logo/rsschool/rss-mark-light.svg"/>
+                        </a>
+                    </li>            
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
