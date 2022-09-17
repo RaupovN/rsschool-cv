@@ -284,3 +284,9 @@
 }
 
 /* end footer */
+
+
+
+.percent .progress_bar {
+  width: 80%;
+}
